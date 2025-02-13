@@ -12,15 +12,19 @@ Removing files from a Git repository can be necessary when you want to untrack c
 
 Navigate to the folder containing the repository using your terminal or command prompt.
 
-### Step 2: Remove the File from the Repo
+### Step 2: Remove the File/Directory from the Repo
 
 Execute the following command to remove the file from the repository but not from the local file system:
 
 ```
 $ git rm --cached filename
 ```
+or Execute the following command to remove the directory from the repository but not from the local:
+```
+git rm -r --cached directoryname
 
-Replace `filename` with the actual name of the file you wish to remove.
+```
+Replace `filename/directoryname` with the actual name of the file you wish to remove.
 
 ### Step 3: Commit the Changes
 
